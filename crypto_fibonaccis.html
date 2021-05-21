@@ -1,0 +1,73 @@
+<div class="container">
+<fieldset><br>
+<div id="success"></div>
+<div id="errors"></div>
+<div class="fibs-form">
+<form class="form" id="cryptoForm">
+<label for="coin"><span>Coin: </span><input type="text" id="coin" class="input-field" name="coin" placeholder="Coin" maxlength="30" oninput="setCustomValidity('')" onload="setCustomValidity('')" required /></label>
+<label for="vsCurrency"><span>VS_Currency: </span><input type="text" class="input-field" name="vsCurrency" id="vsCurrency" placeholder="Optional (default: usd)" maxlength="30" oninput="setCustomValidity('')" /></label>
+<label for="from"><span>From: </span><input type="text" class="input-field" name="from" id="from" placeholder="Optional" maxlength="30" oninput="setCustomValidity('')" /></label>
+<label for="to"><span>To: </span><input type="text" class="input-field" name="to" id="to" placeholder="Optional" maxlength="30" oninput="setCustomValidity('')" /></label>
+<br>
+<input type="submit" value="Get Fib!" />
+</form>
+<br><br><hr><br>
+<div class="table" id="fib">
+	<div class="tableRow">
+		<div class="tableCell left">Coin</div><div class="tableCell right" id="resultsCoin">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">VS Currency</div><div class="tableCell right">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">High</div><div class="tableCell right" id="maxPrice">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">High Timestamp</div><div class="tableCell right" id="maxPriceTimestamp">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">Low (After High)</div><div class="tableCell right" id="minPrice">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">Low Timestamp</div><div class="tableCell right" id="minPriceTimestamp">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">.236</div><div class="tableCell right" id="p236">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">.382</div><div class="tableCell right" id="p382">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">.5</div><div class="tableCell right" id="p5">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">.618</div><div class="tableCell right" id="p618">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">.702</div><div class="tableCell right" id="p702">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">.786</div><div class="tableCell right" id="p786">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">1</div><div class="tableCell right" id="1">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">1.618</div><div class="tableCell right" id="1p618">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">2.618</div><div class="tableCell right" id="2p618">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">3.618</div><div class="tableCell right" id="3p618">-</div>
+	</div>
+	<div class="tableRow">
+		<div class="tableCell left">4.236</div><div class="tableCell right" id="4p236">-</div>
+	</div>
+</div>
+</div>
+</div>
+<br><br>  
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script><script src="https://kodylaswell.com/js/crypto_fibonaccis.js"></script>
